@@ -1,0 +1,254 @@
+ :root{
+   font-size: 16px;
+ }
+
+/* container navbar */
+@media screen and (min-width: 1200px) {
+  .container{
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width: 1200px) {
+  
+  .menuicon i{
+    display: block ;
+  }
+  nav ul {
+    transform: translatex(200%);
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    width: 350px;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    padding-inline: 10px;
+    gap: 0;
+    -webkit-transform: translatex(200%);
+    -moz-transform: translatex(200%);
+    -ms-transform: translatex(200%);
+    -o-transform: translatex(200%);
+}
+    nav ul li {
+      padding-block: 20px;
+    }
+    nav ul  .closeicon{
+      display: block;
+      text-align: right;
+     
+      
+    }
+    nav ul  .closeicon a{
+      font-size: 30px;
+    }
+
+     nav ul  .closeicon a:hover::before{
+
+width: 0px;
+      
+     }
+
+nav .mood i {
+
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+
+
+     }
+
+ /*^========> Container <========*/
+ @media screen and (min-width: 1400px) {
+  .container {
+    max-width: 98%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width:98% ;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 15px;
+  }
+}
+ 
+ /* header */
+ @media screen and (min-width: 1200px) {
+  header  {
+     min-height: 100vh;
+   }
+ }
+ @media screen and (max-width: 992px) {
+   header .container{
+     flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    header .container > *{
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    header .container .headercontent{
+   
+      margin-top: 30px;
+    }
+    .btn-main{
+      border-radius: 100vh;
+      -webkit-border-radius: 100vh;
+      -moz-border-radius: 100vh;
+      -ms-border-radius: 100vh;
+      -o-border-radius: 100vh;
+}
+ }
+
+
+ @media screen and (max-width: 400px) {
+
+   header .groupbtn{
+      flex-direction: column;
+    }
+    
+ }
+
+ /* chefs style */
+ @media screen and (max-width:992px) {
+.chefscards .card{
+    width: calc(calc(100% - var(--gap))/2);
+  }
+
+
+ }
+
+ @media screen and (max-width:768px){
+  .chefscards .card{
+    width: 100%;
+  }
+
+}
+ /* gallery style */
+
+
+ @media screen and (max-width:1400px ){
+  .galleryimgs{
+    height:1025px ;
+  }
+
+  }
+
+  @media screen and (max-width:1200px ){
+    .galleryimgs{
+      height:860px ;
+    }
+  
+    }
+    @media screen and (max-width:992px ){
+      .galleryimgs{
+        height:1400px ;
+       
+      }
+      .galleryimgs picture{
+        width: calc(calc(100% - var(--gap))/2);
+      }
+      .pizza{
+        order: 1;
+      }
+      .frried{
+        order: 6;
+      }
+      .ommlet{
+        order: 4;
+      }
+      .kofta{
+        order: 7;
+      }
+      .burger{
+        order: 2;
+      }
+      .steek{
+        order: 5;
+      }
+    }
+
+    @media screen and (max-width:768px ){
+      .galleryimgs{
+        height:auto ;
+      }
+        .galleryimgs picture{
+          width: 100%;
+      }
+    }
+   
+     /* contact style */
+
+     @media screen and (max-width:992px ){
+      
+   .contact .inputgroup input{
+    width: 100%;
+   }
+
+
+
+      }
+      @media screen and (max-width:768px ){
+      
+      .contact  .contact-means > *{
+         width: 100%;
+        }
+      }
+
+       
+     /* footer style */
+     @media screen and (max-width:1200px ){
+      
+footer :is(.aboutfoot, .contactdetails ) {
+width:calc(calc(100% - var(--gap) * 2)/2) ;
+order: 1 ;
+}
+
+footer :is(.susciption){
+  width:100% ;
+  order: 2;
+}
+
+        }
+      
+        @media screen and (max-width:768px ){
+      
+          footer :is(.aboutfoot, .contactdetails , .susciption ) {
+          width:100%;
+          order: 0 ;
+          }
+          
+      
+                  }
+                

@@ -1,0 +1,59 @@
+:root:has(.mode input:checked) .container {
+
+background-color: #303033;
+    --color-default: #ecf1f6;
+    --primary-hue: 35;
+    --primary-saturation: 72%;
+    --primary-lightness: 44%;
+    --color-primary: hsl(
+      var(--primary-hue),
+      var(--primary-saturation),
+      var(--primary-lightness)
+    );
+    --color-secondary: #ececfc;
+    --color-tertiary: #dbdbec;
+    --light-hue: 0;
+    --light-saturation: 0%;
+    --light-lightness: 9%;
+    --color-light: hsl(
+      var(--light-hue),
+      var(--light-saturation),
+      var(--light-lightness)
+    );
+    --color-light-grey: #ffffff;
+
+    .icon-i{
+        color: black;
+      }
+
+      body:not(:has(:target)).home ,
+      body:has(header:target) .home,
+      body:has(.chefs:target) .chefs,
+      body:has(.Gallery:target) .Gallery,
+      body:has(.contact:target) .contact{
+        color: rgb(0, 0, 0);
+      } 
+
+body:has(.mode input:checked) .mode .light{
+display: block;
+}
+
+body:has(.mode input:checked) .mode .dark{
+    
+        display: none;
+      
+    }
+
+ body:has(.mode input:checked) {
+  background-color: #303033;
+
+
+    }
+
+    body:has(.mode input:checked) .card picture::after{
+
+      background-image: url(/assetse/img/team-shape-dark.svg);
+    }
+
+}
+
